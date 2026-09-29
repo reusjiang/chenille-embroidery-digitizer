@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "trial_id": null,
+  "status": "not_run",
+  "design_version": "BULL-F2-330-v001",
+  "design": "Bulldogs",
+  "font": "Font2",
+  "generated_dst": "releases/bulldogs-font2-330/v001/Bulldogs_F2_330mm.DST",
+  "generated_dst_sha256": "fd76864135643559e075c8cc5ea224a67472f2c21b7873889c3506576461e092",
+  "actual_sewn_dst_sha256": null,
+  "date": null,
+  "operator": null,
+  "machine": {"machine_id": null, "controller": null, "head_or_attachment": null, "mode": null, "settings_photo": null, "speed": null, "tension_settings": null},
+  "materials": {"fabric_id": null, "stabilizer_id": null, "yarn_id": null, "needle": null, "hoop": null, "hooping_method": null},
+  "wilcom_check": {"completed": null, "size_mm": null, "saved_after_import": null},
+  "machine_transform": {"scale": null, "rotation_deg": null, "mirror": null, "other_edits": null},
+  "experiment": {"baseline_version": null, "hypothesis": null, "primary_change": null, "coupled_changes": [], "repeat_index": null},
+  "result": {
+    "completed": null,
+    "thread_break_count": null,
+    "unplanned_stop_count": null,
+    "elapsed_seconds": null,
+    "in_hoop_measurements": null,
+    "relaxed_measurements": null,
+    "relaxation_wait_minutes": null,
+    "measurement_definition": null,
+    "accepted_by_operator": null
+  },
+  "defects": [
+    {"segment_id": null, "location_description": null, "generated_needle_range": null, "machine_needle_range": null, "type": null, "severity_0_to_3": null, "photo": null, "notes": null}
+  ],
+  "media": {"front_overall_with_ruler": null, "closeups": [], "back_if_relevant": null, "video_if_relevant": null},
+  "decision": {"outcome": null, "evidence": null, "applicability": null, "next_hypothesis": null},
+  "notes": "复制本模板后填写；未知数据保持 null。当前是待执行记录，不表示已经试绣。"
+}

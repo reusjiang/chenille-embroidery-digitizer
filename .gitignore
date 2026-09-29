@@ -1,0 +1,27 @@
+# Local Python/runtime and editor state
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+.ai/
+.DS_Store
+Thumbs.db
+*.log
+
+# Private originals and unreviewed operator uploads
+/feedback/inbox/
+.env
+.env.*
+!.env.example
+
+# Reproducible candidates and operator bundles
+/build/
+/dist/
+/tmp/
+/output/
+*.zip

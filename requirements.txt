@@ -1,0 +1,6 @@
+# Direct dependencies; requirements.lock.txt pins the tested transitive set.
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+pillow==12.3.0
+pyembroidery==1.5.1

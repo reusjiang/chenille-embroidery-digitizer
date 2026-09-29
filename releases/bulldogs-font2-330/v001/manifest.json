@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "release_id": "BULL-F2-330-v001",
+  "date": "2026-09-29",
+  "status": "file-validated-awaiting-sewout",
+  "wilcom_checked": false,
+  "machine_tested": false,
+  "source_sha256": "216b5a9f6bbce5a6285f38649230199f6bdbd7300425ba11e27e785a132bb4e7",
+  "metrics": {
+    "width_mm": 330.0,
+    "height_mm": 99.0,
+    "stitch_commands": 786,
+    "jump_commands": 0
+  },
+  "files": {
+    "Bulldogs_F2_330mm.DST": {
+      "bytes": 2873,
+      "sha256": "fd76864135643559e075c8cc5ea224a67472f2c21b7873889c3506576461e092"
+    },
+    "README.md": {
+      "bytes": 1205,
+      "sha256": "b6f8bcc6b2b1e2d2f48107f297ab4ff73cb7f2e7b91857f4d86d69730eadf5a3"
+    },
+    "details.png": {
+      "bytes": 110773,
+      "sha256": "257e08887ad5d4a41adc6078181d49578658f223be6af37650f39bce34f83a54"
+    },
+    "font2_reference.png": {
+      "bytes": 38712,
+      "sha256": "03df805e0d5280bc756e152578bbe94aff8101fbab1e1fa75f18adb89080eb76"
+    },
+    "generation-report.md": {
+      "bytes": 5575,
+      "sha256": "f9aa8aeb02dbec13232636e25396eefb2e32fbad5f6df5d0aa06b97994dd315d"
+    },
+    "preview.png": {
+      "bytes": 171258,
+      "sha256": "9c776802fe58ce1512bfdb0b18e4a06dd558ead774d405f19a4fc8da80afc129"
+    },
+    "replay.html": {
+      "bytes": 20053,
+      "sha256": "8b12ce9932039ec164e44422a7aec70ec77f3512ee87ad78f53a18d6f14a7440"
+    },
+    "replay_data.json": {
+      "bytes": 13465,
+      "sha256": "736fabd79449ef73bf2aeec47c3d2dca7ab79b00fcffb6441b0958e216a0692c"
+    },
+    "reproduction.json": {
+      "bytes": 1268,
+      "sha256": "1a2ddfc8d8bcb31a39d197e8726600ef515b45c152d5c974f9800945dfc788e0"
+    },
+    "source_analysis.png": {
+      "bytes": 177092,
+      "sha256": "1498073e15e3e303dcd168faa72b5f72de0fd224b6a6d9f6b9b3f1299cedcaa7"
+    },
+    "source_stitches.csv": {
+      "bytes": 14337,
+      "sha256": "a6c0646097f45205915b29033694c2d4dbe2d9860580ad7b66a0406f09469856"
+    },
+    "stitches.csv": {
+      "bytes": 21979,
+      "sha256": "1f8dc79bceb6c57cb4ef123741f5407c5199544de6064215efd9cc4a26d21674"
+    },
+    "validation.json": {
+      "bytes": 2111,
+      "sha256": "727276caf95a73feb17d655e317f742541fb0759372825794a973c023acc1931"
+    }
+  }
+}

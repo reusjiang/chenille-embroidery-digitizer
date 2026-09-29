@@ -1,0 +1,17 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.txt text eol=lf
+# Frozen release bytes are hash-verified and must survive checkout unchanged.
+releases/** -text
+examples/**/*.DST -text
+*.DST binary
+*.DGT binary
+*.EMB binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.otf binary
+*.OTF binary

@@ -1,0 +1,25 @@
+{
+  "status": "baseline-reproduced-during-repository-migration",
+  "python": "3.13.13 (main, Jun  2 2026, 22:33:40) [Clang 22.1.3 ]",
+  "source_sha256": "216b5a9f6bbce5a6285f38649230199f6bdbd7300425ba11e27e785a132bb4e7",
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "pillow": "12.3.0",
+    "pyembroidery": "1.5.1"
+  },
+  "script_sha256": {
+    "build_pilot.py": "a76e5b4205e9c83bdd25e127c8d3b71725b85da76b9d03a5786f60d93c73a925",
+    "build_replay.py": "87640b85573b07508a75c0981f2008fe78e28e8a1b80bfde440d564c3be74ccc",
+    "build_report.py": "ad3844416624a7b3f66d7b49ad4d356c5a40e9355707c0eeb188ebc7e6f38e08",
+    "generate_dst.py": "0b7439f9ddcf568b66263339d1ef985c4d59efad34ad21ee74d24291568356f3",
+    "package_operator.py": "45e7c60eadc0ab3f91543af12952cb321e863f94bf06a1da78f603c86c135efa",
+    "project.py": "c0a95ee399c6787edefbbd560429c8a990560ba940223ced201d0ba27b60a605",
+    "verify_release.py": "04647b066210cf300d5ef9110db2a2f8c870412bb23575ec4fe1a1dc84b8708b"
+  },
+  "dst_sha256": "fd76864135643559e075c8cc5ea224a67472f2c21b7873889c3506576461e092",
+  "width_mm": 330,
+  "scope": "Verified Bulldogs pilot; geometry settings remain case-specific in generate_dst.py.",
+  "dst_matches_original_v001": true
+}

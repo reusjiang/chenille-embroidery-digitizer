@@ -1,0 +1,12 @@
+{
+  "case_id": "bulldogs-font2",
+  "origin": "User-provided historical manual Font2 Bulldogs DST.",
+  "source_sha256": "216b5a9f6bbce5a6285f38649230199f6bdbd7300425ba11e27e785a132bb4e7",
+  "source_width_mm": 328.9,
+  "verified_main_needle_range_1based": [
+    6,
+    802
+  ],
+  "source_font": "Font2 / Loverine",
+  "scope": "Single verified same-word pilot; not a generic font digitizer."
+}

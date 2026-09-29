@@ -1,0 +1,94 @@
+{
+  "case": "Bulldogs",
+  "case_id": "bulldogs-font2",
+  "font": "Font2 / Loverine",
+  "source_sample": "examples/bulldogs-font2/source.DST",
+  "method": "same-word manual-path reuse with piecewise cubic reconstruction; not general automatic digitization",
+  "width_mm": 330.0,
+  "height_mm": 99.0,
+  "stitch_commands": 786,
+  "jump_commands": 0,
+  "jump_runs": 0,
+  "start_mm": [
+    0.0,
+    0.0
+  ],
+  "end_mm": [
+    311.8,
+    -1.1
+  ],
+  "bbox_mm": [
+    [
+      -8.8,
+      -47.1
+    ],
+    [
+      321.2,
+      51.9
+    ]
+  ],
+  "return_lengths_mm": {
+    "start": 9.997756796922143,
+    "end": 9.981385081889252
+  },
+  "return_needle_ranges_1based": {
+    "start": [
+      1,
+      10
+    ],
+    "end": [
+      778,
+      786
+    ]
+  },
+  "turn_radius_design_mm": {
+    "start": 0.35,
+    "end": 0.25
+  },
+  "needle_length_mm": {
+    "min_nonzero": 0.2,
+    "median": 2.420743687382041,
+    "max": 2.580697580112788
+  },
+  "short_stitches_under_0_5mm": 7,
+  "source_return_lengths_mm": {
+    "start": 10.426702110186769,
+    "end_before_micro_lock": 6.60693509561119
+  },
+  "source_retained_needle_range_1based": [
+    6,
+    802
+  ],
+  "source_sharp_turn_needles_1based": [
+    34,
+    63,
+    120,
+    186,
+    225,
+    414,
+    581,
+    613,
+    656
+  ],
+  "reconstructed_main_deviation_mm": {
+    "max_sampled": 0.1935120353389975,
+    "p95_sampled": 0.04789114019635946
+  },
+  "checks": {
+    "dual_read_identical": true,
+    "header_extents_counts_endpoint": true,
+    "single_final_END": true,
+    "all_needle_deltas_encodable": true,
+    "width_target": true,
+    "both_return_lengths_within_0_05mm": true
+  },
+  "wilcom_checked": false,
+  "machine_tested": false,
+  "limitations": [
+    "Only this verified Bulldogs pilot is supported.",
+    "Order text/font visually confirmed; no general OCR classifier implemented.",
+    "Original font used for comparison, not for new unseen glyph centerline extraction.",
+    "10 mm is total return path including semicircle, measured as decoded segment lengths.",
+    "Internal manual sharp reversals retained; new rounded turns only at start/end."
+  ]
+}
