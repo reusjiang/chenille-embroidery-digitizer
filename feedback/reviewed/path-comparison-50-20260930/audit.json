@@ -1,0 +1,428 @@
+{
+  "review_date": "2026-10-13",
+  "manifest_entries": 976,
+  "manifest_mismatches": [],
+  "source_manifest_sha256": "e90f8ca27872582cbf094661119c2163355bc00ea7353493f41b9793904554be",
+  "source_workbook_sha256": "3a89220ea9db2a10c7d199948b8bae18be37aa1dbdfd9116bf4a73eb9cb88f80",
+  "individual_records_match_aggregate": true,
+  "original_records_match_aggregate": true,
+  "issue_rows_match_aggregate": true,
+  "xlsx_user_review_cells": {
+    "H6": "待复核",
+    "H7": "待复核",
+    "H8": "待复核",
+    "H9": "待复核",
+    "H10": "待复核",
+    "H11": "待复核",
+    "H12": "待复核",
+    "H13": "待复核",
+    "H14": "待复核",
+    "H15": "待复核",
+    "H16": "待复核",
+    "H17": "待复核",
+    "H18": "待复核",
+    "H19": "待复核",
+    "H20": "待复核",
+    "H21": "待复核",
+    "H22": "待复核",
+    "H23": "待复核",
+    "H24": "待复核",
+    "H25": "待复核",
+    "H26": "待复核",
+    "H27": "待复核",
+    "H28": "待复核",
+    "H29": "待复核",
+    "H30": "待复核",
+    "H31": "待复核",
+    "H32": "待复核",
+    "H33": "待复核",
+    "H34": "待复核",
+    "H35": "待复核",
+    "H36": "待复核",
+    "H37": "待复核",
+    "H38": "待复核",
+    "H39": "待复核",
+    "H40": "待复核",
+    "H41": "待复核",
+    "H42": "待复核",
+    "H43": "待复核",
+    "H44": "待复核",
+    "H45": "待复核",
+    "H46": "待复核",
+    "H47": "待复核",
+    "H48": "待复核",
+    "H49": "待复核",
+    "H50": "待复核",
+    "H51": "待复核",
+    "H52": "待复核",
+    "H53": "待复核",
+    "H54": "待复核",
+    "H55": "待复核"
+  },
+  "xlsx_stored_error_cells": [],
+  "xlsx_recalculated": false,
+  "metrics_recomputed_from_geometry": false,
+  "unlisted_files": [
+    ".DS_Store",
+    "01-F2-Bulldogs/.DS_Store",
+    "manifest.json"
+  ],
+  "source_core_code_available_in_this_repo": false,
+  "checks": [
+    {
+      "id": "01-F2-Bulldogs",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "02-F2-Bears",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "03-F2-Bobcats",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "04-F2-Braves",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "05-F2-Cardinals",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "06-F2-Cougars",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "07-F2-Eagles",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "08-F2-Falcons",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "09-F2-Giants",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "10-F2-Hawks",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "11-F2-Hornets",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "12-F2-Huskies",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "13-F2-Knights",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "14-F2-Lions",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "15-F2-Mustangs",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "16-F2-Panthers",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "17-F2-Warriors",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "18-F2-Wildcats",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "19-F2-B-Club",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "20-F2-East_Coast",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "21-F1-Bulldogs",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "22-F1-Lions",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "23-F1-Seahawks",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "24-F1-Bears",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "25-F1-Cardinals",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "26-F1-Cougars",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "27-F1-Dragons",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "28-F1-Eagles",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "29-F1-Falcons",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "30-F1-Gators",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "31-F1-Hawks",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "32-F1-Huskies",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "33-F1-Jaguars",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "34-F1-Knights",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "35-F1-Mustangs",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "36-F3-Bulldogs",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "37-F3-Blazers",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "38-F3-Warriors",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "39-F3-Wildcats",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "40-F3-Tigers",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "41-F3-Bears",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "42-F3-Cardinals",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "43-F3-Cougars",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "44-F3-Dragons",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "45-F3-Eagles",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "46-F3-Gators",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "47-F3-Hawks",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "48-F3-Huskies",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "49-F3-Lions",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    },
+    {
+      "id": "50-F3-Seahawks",
+      "dst_hashes_verified": 2,
+      "emb_hashes_verified": 1,
+      "independent_dst_decode_matches_paths_json": true,
+      "source_metrics_copies_match": true
+    }
+  ],
+  "limitations": [
+    "Original Windows ZIP unavailable; hashes checked against supplied manifest and per-case provenance, not the archive itself.",
+    "Core studio source is absent in this repository; cannot confirm geometry root cause from source code.",
+    "No machine sew-out, Wilcom inspection or operator acceptance evidence in this batch."
+  ]
+}

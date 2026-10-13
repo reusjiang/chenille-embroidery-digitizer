@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-13",
+  "batch_generation_date": [
+    "2026-09-30"
+  ],
+  "evidence_type": "digital_path_comparison",
+  "machine_trials": 0,
+  "wilcom_checks": 0,
+  "missing_ties": 50,
+  "native_emb_generated": 0,
+  "source_issue_counts": {
+    "S01": 50,
+    "G01": 50,
+    "G02": 50,
+    "P01": 50,
+    "T01": 50,
+    "E01": 50
+  },
+  "all": {
+    "samples": 50,
+    "height_change_over_5pct": 29,
+    "height_change_over_10pct": 8,
+    "height_delta_pct_median": -5.2172035048747345,
+    "height_delta_pct_min": -25.2016129032258,
+    "height_delta_pct_max": 7.88704965920155,
+    "bidirectional_p95_max_mm_median": 6.4105,
+    "bidirectional_p95_max_mm_max": 12.055,
+    "jump_runs_changed": 19,
+    "jump_runs_reduced": 19,
+    "source_ai_visual_severity_3": 6
+  },
+  "fonts": {
+    "1": {
+      "samples": 15,
+      "height_change_over_5pct": 10,
+      "height_change_over_10pct": 2,
+      "height_delta_pct_median": -5.47945205479452,
+      "height_delta_pct_min": -25.2016129032258,
+      "height_delta_pct_max": 5.238649592549471,
+      "bidirectional_p95_max_mm_median": 5.009,
+      "bidirectional_p95_max_mm_max": 8.91,
+      "jump_runs_changed": 7,
+      "jump_runs_reduced": 7,
+      "source_ai_visual_severity_3": 1
+    },
+    "2": {
+      "samples": 20,
+      "height_change_over_5pct": 9,
+      "height_change_over_10pct": 2,
+      "height_delta_pct_median": -2.8361047076307377,
+      "height_delta_pct_min": -13.342503438789555,
+      "height_delta_pct_max": 7.88704965920155,
+      "bidirectional_p95_max_mm_median": 6.242,
+      "bidirectional_p95_max_mm_max": 12.055,
+      "jump_runs_changed": 9,
+      "jump_runs_reduced": 9,
+      "source_ai_visual_severity_3": 1
+    },
+    "3": {
+      "samples": 15,
+      "height_change_over_5pct": 10,
+      "height_change_over_10pct": 4,
+      "height_delta_pct_median": -8.29918032786885,
+      "height_delta_pct_min": -17.801857585139313,
+      "height_delta_pct_max": 3.075571177504388,
+      "bidirectional_p95_max_mm_median": 8.098,
+      "bidirectional_p95_max_mm_max": 10.929,
+      "jump_runs_changed": 3,
+      "jump_runs_reduced": 3,
+      "source_ai_visual_severity_3": 4
+    }
+  },
+  "metric_note": "P95 is source-reported nearest sampled-path distance; max of two directions, not stitch-order or physical error.",
+  "source_user_review_counts": {
+    "待复核": 50
+  },
+  "matched_word_comparison": {
+    "words": [
+      "Bears",
+      "Bulldogs",
+      "Cardinals",
+      "Cougars",
+      "Eagles",
+      "Hawks",
+      "Huskies",
+      "Lions"
+    ],
+    "fonts": {
+      "1": {
+        "samples": 8,
+        "height_change_over_5pct": 5,
+        "height_change_over_10pct": 2,
+        "height_delta_pct_median": -7.745339713281113,
+        "height_delta_pct_min": -25.2016129032258,
+        "height_delta_pct_max": 3.66863905325443,
+        "bidirectional_p95_max_mm_median": 6.0035,
+        "bidirectional_p95_max_mm_max": 8.91,
+        "jump_runs_changed": 5,
+        "jump_runs_reduced": 5,
+        "source_ai_visual_severity_3": 1
+      },
+      "2": {
+        "samples": 8,
+        "height_change_over_5pct": 4,
+        "height_change_over_10pct": 1,
+        "height_delta_pct_median": -4.084398067794476,
+        "height_delta_pct_min": -12.755102040816324,
+        "height_delta_pct_max": 7.88704965920155,
+        "bidirectional_p95_max_mm_median": 6.563,
+        "bidirectional_p95_max_mm_max": 8.46,
+        "jump_runs_changed": 0,
+        "jump_runs_reduced": 0,
+        "source_ai_visual_severity_3": 0
+      },
+      "3": {
+        "samples": 8,
+        "height_change_over_5pct": 4,
+        "height_change_over_10pct": 3,
+        "height_delta_pct_median": -6.6270676414119,
+        "height_delta_pct_min": -17.801857585139313,
+        "height_delta_pct_max": 3.075571177504388,
+        "bidirectional_p95_max_mm_median": 8.596,
+        "bidirectional_p95_max_mm_max": 10.929,
+        "jump_runs_changed": 2,
+        "jump_runs_reduced": 2,
+        "source_ai_visual_severity_3": 2
+      }
+    }
+  },
+  "stitch_length_diagnostics": {
+    "reference": {
+      "nonzero_under_0_5mm_total": 227,
+      "samples_with_nonzero_under_0_5mm": 25,
+      "maximum_stitch_mm": 9.618,
+      "samples_with_stitches_over_2_5mm": 50
+    },
+    "generated": {
+      "nonzero_under_0_5mm_total": 715,
+      "samples_with_nonzero_under_0_5mm": 46,
+      "maximum_stitch_mm": 2.343,
+      "samples_with_stitches_over_2_5mm": 0
+    }
+  }
+}
