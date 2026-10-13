@@ -1,0 +1,129 @@
+{
+  "scheme_id": "CHENILLE-REF-v002",
+  "case_id": "43-F3-Cougars",
+  "text": "Cougars",
+  "font": 3,
+  "status": "file_verified_pending_wilcom_and_sewout",
+  "method": "same_word_manual_reference_reconstruction",
+  "dst_file": "Cougars_F3_319.9mm_v002.DST",
+  "dst_sha256": "96376889f67a9dadecb4fe8c4e6f40212f48f47f0b1aa32b001acc40c3ff102d",
+  "source": {
+    "id": "43-F3-Cougars",
+    "text": "Cougars",
+    "font": 3,
+    "width_mm": 319.9,
+    "manual": "examples/feedback-v002/43-F3-Cougars/manual.DST",
+    "manual_sha256": "c3a06b5351f311602c81804547c057e971c7cb90a9a0a0b4a4da3a5a803cc4af",
+    "previous_draft": "examples/feedback-v002/43-F3-Cougars/previous-draft.DST",
+    "previous_draft_sha256": "9d7756e3733d0c63d8799f90b190cc30d5675d1142020ec0f42ebf8916acd3b1",
+    "source_core_needles_1based": [
+      7,
+      808
+    ],
+    "source_feedback": "feedback/inbox/人工对照反馈50份-僵硬专项/43-F3-Cougars/feedback.json",
+    "source_feedback_sha256": "e7cc5a76e8ef46afb5f7d4cc65df1b0b4daae1d9356a17e234769e7b601296a4",
+    "reported_problem": "o/u 接口被拉成直短段，g 下环变浅，r/s 接合处折转更集中。"
+  },
+  "width_mm": 319.9,
+  "height_mm": 108.3,
+  "stitch_commands": 687,
+  "jump_commands": 0,
+  "source_core_needles_1based": [
+    7,
+    808
+  ],
+  "source_internal_sharp_reversal_needles_1based": [
+    124,
+    218,
+    335,
+    507,
+    619,
+    640,
+    716
+  ],
+  "return_lengths_mm": {
+    "start": 9.992453556042815,
+    "end": 10.019930743570335
+  },
+  "return_needle_ranges_1based": {
+    "start": [
+      1,
+      10
+    ],
+    "end": [
+      679,
+      687
+    ]
+  },
+  "parameters": {
+    "max_step_mm": 2.3,
+    "chord_error_mm": 0.04,
+    "min_sampling_step_mm": 0.35,
+    "start_radius_mm": 0.35,
+    "end_radius_mm": 0.25,
+    "return_length_mm": 10.0,
+    "return_tolerance_mm": 0.05,
+    "max_final_stitch_mm": 2.5,
+    "main_reconstruction_max_deviation_mm": 0.35,
+    "comparison_sampling_step_mm": 0.25
+  },
+  "uniform_main_scale_factor": 1.0002643296041878,
+  "origin_in_scaled_source_mm": [
+    0.5036599502027692,
+    4.695533559880091
+  ],
+  "main_reconstruction_in_source_coordinates_mm": {
+    "sample_step_mm": 0.025,
+    "max": 0.10582210837532631,
+    "p95": 0.048552542046128966
+  },
+  "needle_length_mm": {
+    "min_nonzero": 0.19999999999999996,
+    "median": 2.302172886644267,
+    "max": 2.4413111231467455
+  },
+  "short_stitches_under_0_5mm": 16,
+  "initial_zero_displacement_commands": 1,
+  "comparison": {
+    "previous_draft": {
+      "sampling_step_mm": 0.25,
+      "alignment": "independent bounding-box centers; translation only",
+      "candidate_to_reference_p95_mm": 7.232093603726513,
+      "reference_to_candidate_p95_mm": 9.120282540488375,
+      "bidirectional_p95_max_mm": 9.120282540488375,
+      "mean_symmetric_mm": 3.256093854283377,
+      "scope": "Nearest sampled path distances, not stitch-order or physical quality. Reference used as reconstruction input."
+    },
+    "candidate": {
+      "sampling_step_mm": 0.25,
+      "alignment": "independent bounding-box centers; translation only",
+      "candidate_to_reference_p95_mm": 0.12165525060596426,
+      "reference_to_candidate_p95_mm": 0.12133516482133973,
+      "bidirectional_p95_max_mm": 0.12165525060596426,
+      "mean_symmetric_mm": 0.07197469178927568,
+      "scope": "Nearest sampled path distances, not stitch-order or physical quality. Reference used as reconstruction input."
+    }
+  },
+  "checks": {
+    "dual_decode_identical": true,
+    "strict_header_and_end": true,
+    "planned_coordinates_match": true,
+    "width_matches_reference": true,
+    "both_returns_meet_10mm_tolerance": true,
+    "internal_reversal_anchors_preserved": true,
+    "maximum_needle_length": true,
+    "main_deviation_bound": true,
+    "reference_fit_improved": true
+  },
+  "wilcom_checked": false,
+  "machine_tested": false,
+  "native_emb_generated": false,
+  "limitations": [
+    "Uses the same-word manual reference as input; comparison measures reconstruction fit, not unseen-word generalization.",
+    "Only these continuous single-color cases; no jump handling or general text generation.",
+    "Reference stitch order retained but not proven machine-accepted.",
+    "Return radii are inherited software design values, not machine-calibrated parameters.",
+    "Short stitches near returns require Wilcom review and physical sew-out.",
+    "No machine-specific chain/moss mode commands or native EMB objects."
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "scheme_id": "CHENILLE-REF-v002",
+  "status": "candidate_pending_wilcom_and_sewout",
+  "cases": [
+    {
+      "scheme_id": "CHENILLE-REF-v002",
+      "case_id": "01-F2-Bulldogs",
+      "text": "Bulldogs",
+      "font": 2,
+      "status": "file_verified_pending_wilcom_and_sewout",
+      "method": "same_word_manual_reference_reconstruction",
+      "dst_file": "Bulldogs_F2_328.9mm_v002.DST",
+      "dst_sha256": "743229434795721c452ff21bfa6d83f137fc2abdc649c804c93752f6822e4f0a",
+      "source": {
+        "id": "01-F2-Bulldogs",
+        "text": "Bulldogs",
+        "font": 2,
+        "width_mm": 328.9,
+        "manual": "examples/feedback-v002/01-F2-Bulldogs/manual.DST",
+        "manual_sha256": "216b5a9f6bbce5a6285f38649230199f6bdbd7300425ba11e27e785a132bb4e7",
+        "previous_draft": "examples/feedback-v002/01-F2-Bulldogs/previous-draft.DST",
+        "previous_draft_sha256": "2e4d1b11586690dd455b662e52a38a9e02d290b313a1c6cb8e793954348634d7",
+        "source_core_needles_1based": [
+          6,
+          802
+        ],
+        "source_feedback": "feedback/inbox/人工对照反馈50份-僵硬专项/01-F2-Bulldogs/feedback.json",
+        "source_feedback_sha256": "c3789ae8a6a21cd69a553108879d4eb17d5a27362cdb9ed42e09d5e72579054f",
+        "reported_problem": "B 中腰由弯曲过渡变成较平直的接线；双 l 落底处连续出现短折接，削弱人工稿流畅的连笔。"
+      },
+      "width_mm": 328.90000000000003,
+      "height_mm": 98.69999999999999,
+      "stitch_commands": 829,
+      "jump_commands": 0,
+      "source_core_needles_1based": [
+        6,
+        802
+      ],
+      "source_internal_sharp_reversal_needles_1based": [
+        34,
+        63,
+        120,
+        186,
+        225,
+        414,
+        581,
+        613,
+        656
+      ],
+      "return_lengths_mm": {
+        "start": 9.997756796922143,
+        "end": 10.033731763973716
+      },
+      "return_needle_ranges_1based": {
+        "start": [
+          1,
+          10
+        ],
+        "end": [
+          821,
+          829
+        ]
+      },
+      "parameters": {
+        "max_step_mm": 2.3,
+        "chord_error_mm": 0.04,
+        "min_sampling_step_mm": 0.35,
+        "start_radius_mm": 0.35,
+        "end_radius_mm": 0.25,
+        "return_length_mm": 10.0,
+        "return_tolerance_mm": 0.05,
+        "max_final_stitch_mm": 2.5,
+        "main_reconstruction_max_deviation_mm": 0.35,
+        "comparison_sampling_step_mm": 0.25
+      },
+      "uniform_main_scale_factor": 1.000608457560085,
+      "origin_in_scaled_source_mm": [
+        -0.7482702532779169,
+        1.0635074005852203
+      ],
+      "main_reconstruction_in_source_coordinates_mm": {
+        "sample_step_mm": 0.025,
+        "max": 0.19177038687561468,
+        "p95": 0.05259484271502268
+      },
+      "needle_length_mm": {
+        "min_nonzero": 0.09999999999999964,
+        "median": 2.3021728866442492,
+        "max": 2.4413111231467406
+      },
+      "short_stitches_under_0_5mm": 10,
+      "initial_zero_displacement_commands": 1,
+      "comparison": {
+        "previous_draft": {
+          "sampling_step_mm": 0.25,
+          "alignment": "independent bounding-box centers; translation only",
+          "candidate_to_reference_p95_mm": 4.677998321103894,
+          "reference_to_candidate_p95_mm": 4.91884994274835,
+          "bidirectional_p95_max_mm": 4.91884994274835,
+          "mean_symmetric_mm": 1.9261932138255349,
+          "scope": "Nearest sampled path distances, not stitch-order or physical quality. Reference used as reconstruction input."
+        },
+        "candidate": {
+          "sampling_step_mm": 0.25,
+          "alignment": "independent bounding-box centers; translation only",
+          "candidate_to_reference_p95_mm": 0.17259960003648542,
+          "reference_to_candidate_p95_mm": 0.1701574284522559,
+          "bidirectional_p95_max_mm": 0.17259960003648542,
+          "mean_symmetric_mm": 0.09407314427637214,
+          "scope": "Nearest sampled path distances, not stitch-order or physical quality. Reference used as reconstruction input."
+        }
+      },
+      "checks": {
+        "dual_decode_identical": true,
+        "strict_header_and_end": true,
+        "planned_coordinates_match": true,
+        "width_matches_reference": true,
+        "both_returns_meet_10mm_tolerance": true,
+        "internal_reversal_anchors_preserved": true,
+        "maximum_needle_length": true,
+        "main_deviation_bound": true,
+        "reference_fit_improved": true
+      },
+      "wilcom_checked": false,
+      "machine_tested": false,
+      "native_emb_generated": false,
+      "limitations": [
+        "Uses the same-word manual reference as input; comparison measures reconstruction fit, not unseen-word generalization.",
+        "Only these continuous single-color cases; no jump handling or general text generation.",
+        "Reference stitch order retained but not proven machine-accepted.",
+        "Return radii are inherited software design values, not machine-calibrated parameters.",
+        "Short stitches near returns require Wilcom review and physical sew-out.",
+        "No machine-specific chain/moss mode commands or native EMB objects."
+      ]
+    },
+    {
+      "scheme_id": "CHENILLE-REF-v002",
+      "case_id": "36-F3-Bulldogs",
+      "text": "Bulldogs",
+      "font": 3,
+      "status": "file_verified_pending_wilcom_and_sewout",
+      "method": "same_word_manual_reference_reconstruction",
+      "dst_file": "Bulldogs_F3_329.7mm_v002.DST",
+      "dst_sha256": "a34a44bbddd09fe33e6d9d67dc98f588fd59153cf2b66d0b2ba57996ef7a0211",
+      "source": {
+        "id": "36-F3-Bulldogs",
+        "text": "Bulldogs",
+        "font": 3,
+        "width_mm": 329.7,
+        "manual": "examples/feedback-v002/36-F3-Bulldogs/manual.DST",
+        "manual_sha256": "fda42269f2ccf3b3b2d518c431dd936536c0e5857e87e65d12ad58a841423a21",
+        "previous_draft": "examples/feedback-v002/36-F3-Bulldogs/previous-draft.DST",
+        "previous_draft_sha256": "dadec5c82380b6bf0e6f6540c1a486af762f85076cdda91acdf6a17a9ee8e6bc",
+        "source_core_needles_1based": [
+          7,
+          903
+        ],
+        "source_feedback": "feedback/inbox/人工对照反馈50份-僵硬专项/36-F3-Bulldogs/feedback.json",
+        "source_feedback_sha256": "6cb093da9f384c4939284c2239d92d00173971687d52d51c2210bdc8520c308c",
+        "reported_problem": "B 主竖、中腰和上环趋于方直，双 l/d 谷底呈连续折接；这是字形僵硬的重点样本。"
+      },
+      "width_mm": 329.7,
+      "height_mm": 97.6,
+      "stitch_commands": 810,
+      "jump_commands": 0,
+      "source_core_needles_1based": [
+        7,
+        903
+      ],
+      "source_internal_sharp_reversal_needles_1based": [
+        74,
+        218,
+        257,
+        457,
+        588,
+        635,
+        724,
+        818
+      ],
+      "return_lengths_mm": {
+        "start": 9.979420404691213,
+        "end": 9.967943879439037
+      },
+      "return_needle_ranges_1based": {
+        "start": [
+          1,
+          10
+        ],
+        "end": [
+          798,
+          810
+        ]
+      },
+      "parameters": {
+        "max_step_mm": 2.3,
+        "chord_error_mm": 0.04,
+        "min_sampling_step_mm": 0.35,
+        "start_radius_mm": 0.35,
+        "end_radius_mm": 0.25,
+        "return_length_mm": 10.0,
+        "return_tolerance_mm": 0.05,
+        "max_final_stitch_mm": 2.5,
+        "main_reconstruction_max_deviation_mm": 0.35,
+        "comparison_sampling_step_mm": 0.25
+      },
+      "uniform_main_scale_factor": 1.000265899780723,
+      "origin_in_scaled_source_mm": [
+        0.3442585188679914,
+        0.3935612495988925
+      ],
+      "main_reconstruction_in_source_coordinates_mm": {
+        "sample_step_mm": 0.025,
+        "max": 0.2505823076794967,
+        "p95": 0.051953353928150085
+      },
+      "needle_length_mm": {
+        "min_nonzero": 0.14142135623728638,
+        "median": 2.302172886644251,
+        "max": 2.44131112314676
+      },
+      "short_stitches_under_0_5mm": 25,
+      "initial_zero_displacement_commands": 1,
+      "comparison": {
+        "previous_draft": {
+          "sampling_step_mm": 0.25,
+          "alignment": "independent bounding-box centers; translation only",
+          "candidate_to_reference_p95_mm": 4.425353752115785,
+          "reference_to_candidate_p95_mm": 5.571838085080108,
+          "bidirectional_p95_max_mm": 5.571838085080108,
+          "mean_symmetric_mm": 2.1626721575770453,
+          "scope": "Nearest sampled path distances, not stitch-order or physical quality. Reference used as reconstruction input."
+        },
+        "candidate": {
+          "sampling_step_mm": 0.25,
+          "alignment": "independent bounding-box centers; translation only",
+          "candidate_to_reference_p95_mm": 0.16278820596103233,
+          "reference_to_candidate_p95_mm": 0.160000000000025,
+          "bidirectional_p95_max_mm": 0.16278820596103233,
+          "mean_symmetric_mm": 0.1023237430462482,
+          "scope": "Nearest sampled path distances, not stitch-order or physical quality. Reference used as reconstruction input."
+        }
+      },
+      "checks": {
+        "dual_decode_identical": true,
+        "strict_header_and_end": true,
+        "planned_coordinates_match": true,
+        "width_matches_reference": true,
+        "both_returns_meet_10mm_tolerance": true,
+        "internal_reversal_anchors_preserved": true,
+        "maximum_needle_length": true,
+        "main_deviation_bound": true,
+        "reference_fit_improved": true
+      },
+      "wilcom_checked": false,
+      "machine_tested": false,
+      "native_emb_generated": false,
+      "limitations": [
+        "Uses the same-word manual reference as input; comparison measures reconstruction fit, not unseen-word generalization.",
+        "Only these continuous single-color cases; no jump handling or general text generation.",
+        "Reference stitch order retained but not proven machine-accepted.",
+        "Return radii are inherited software design values, not machine-calibrated parameters.",
+        "Short stitches near returns require Wilcom review and physical sew-out.",
+        "No machine-specific chain/moss mode commands or native EMB objects."
+      ]
+    },
+    {
+      "scheme_id": "CHENILLE-REF-v002",
+      "case_id": "43-F3-Cougars",
+      "text": "Cougars",
+      "font": 3,
+      "status": "file_verified_pending_wilcom_and_sewout",
+      "method": "same_word_manual_reference_reconstruction",
+      "dst_file": "Cougars_F3_319.9mm_v002.DST",
+      "dst_sha256": "96376889f67a9dadecb4fe8c4e6f40212f48f47f0b1aa32b001acc40c3ff102d",
+      "source": {
+        "id": "43-F3-Cougars",
+        "text": "Cougars",
+        "font": 3,
+        "width_mm": 319.9,
+        "manual": "examples/feedback-v002/43-F3-Cougars/manual.DST",
+        "manual_sha256": "c3a06b5351f311602c81804547c057e971c7cb90a9a0a0b4a4da3a5a803cc4af",
+        "previous_draft": "examples/feedback-v002/43-F3-Cougars/previous-draft.DST",
+        "previous_draft_sha256": "9d7756e3733d0c63d8799f90b190cc30d5675d1142020ec0f42ebf8916acd3b1",
+        "source_core_needles_1based": [
+          7,
+          808
+        ],
+        "source_feedback": "feedback/inbox/人工对照反馈50份-僵硬专项/43-F3-Cougars/feedback.json",
+        "source_feedback_sha256": "e7cc5a76e8ef46afb5f7d4cc65df1b0b4daae1d9356a17e234769e7b601296a4",
+        "reported_problem": "o/u 接口被拉成直短段，g 下环变浅，r/s 接合处折转更集中。"
+      },
+      "width_mm": 319.9,
+      "height_mm": 108.3,
+      "stitch_commands": 687,
+      "jump_commands": 0,
+      "source_core_needles_1based": [
+        7,
+        808
+      ],
+      "source_internal_sharp_reversal_needles_1based": [
+        124,
+        218,
+        335,
+        507,
+        619,
+        640,
+        716
+      ],
+      "return_lengths_mm": {
+        "start": 9.992453556042815,
+        "end": 10.019930743570335
+      },
+      "return_needle_ranges_1based": {
+        "start": [
+          1,
+          10
+        ],
+        "end": [
+          679,
+          687
+        ]
+      },
+      "parameters": {
+        "max_step_mm": 2.3,
+        "chord_error_mm": 0.04,
+        "min_sampling_step_mm": 0.35,
+        "start_radius_mm": 0.35,
+        "end_radius_mm": 0.25,
+        "return_length_mm": 10.0,
+        "return_tolerance_mm": 0.05,
+        "max_final_stitch_mm": 2.5,
+        "main_reconstruction_max_deviation_mm": 0.35,
+        "comparison_sampling_step_mm": 0.25
+      },
+      "uniform_main_scale_factor": 1.0002643296041878,
+      "origin_in_scaled_source_mm": [
+        0.5036599502027692,
+        4.695533559880091
+      ],
+      "main_reconstruction_in_source_coordinates_mm": {
+        "sample_step_mm": 0.025,
+        "max": 0.10582210837532631,
+        "p95": 0.048552542046128966
+      },
+      "needle_length_mm": {
+        "min_nonzero": 0.19999999999999996,
+        "median": 2.302172886644267,
+        "max": 2.4413111231467455
+      },
+      "short_stitches_under_0_5mm": 16,
+      "initial_zero_displacement_commands": 1,
+      "comparison": {
+        "previous_draft": {
+          "sampling_step_mm": 0.25,
+          "alignment": "independent bounding-box centers; translation only",
+          "candidate_to_reference_p95_mm": 7.232093603726513,
+          "reference_to_candidate_p95_mm": 9.120282540488375,
+          "bidirectional_p95_max_mm": 9.120282540488375,
+          "mean_symmetric_mm": 3.256093854283377,
+          "scope": "Nearest sampled path distances, not stitch-order or physical quality. Reference used as reconstruction input."
+        },
+        "candidate": {
+          "sampling_step_mm": 0.25,
+          "alignment": "independent bounding-box centers; translation only",
+          "candidate_to_reference_p95_mm": 0.12165525060596426,
+          "reference_to_candidate_p95_mm": 0.12133516482133973,
+          "bidirectional_p95_max_mm": 0.12165525060596426,
+          "mean_symmetric_mm": 0.07197469178927568,
+          "scope": "Nearest sampled path distances, not stitch-order or physical quality. Reference used as reconstruction input."
+        }
+      },
+      "checks": {
+        "dual_decode_identical": true,
+        "strict_header_and_end": true,
+        "planned_coordinates_match": true,
+        "width_matches_reference": true,
+        "both_returns_meet_10mm_tolerance": true,
+        "internal_reversal_anchors_preserved": true,
+        "maximum_needle_length": true,
+        "main_deviation_bound": true,
+        "reference_fit_improved": true
+      },
+      "wilcom_checked": false,
+      "machine_tested": false,
+      "native_emb_generated": false,
+      "limitations": [
+        "Uses the same-word manual reference as input; comparison measures reconstruction fit, not unseen-word generalization.",
+        "Only these continuous single-color cases; no jump handling or general text generation.",
+        "Reference stitch order retained but not proven machine-accepted.",
+        "Return radii are inherited software design values, not machine-calibrated parameters.",
+        "Short stitches near returns require Wilcom review and physical sew-out.",
+        "No machine-specific chain/moss mode commands or native EMB objects."
+      ]
+    }
+  ]
+}

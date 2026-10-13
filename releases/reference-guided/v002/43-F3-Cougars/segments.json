@@ -1,0 +1,98 @@
+[
+  {
+    "segment_id": "43-F3-Cougars:manual-7-124",
+    "source_needles_1based": [
+      7,
+      124
+    ],
+    "candidate_needles_1based": [
+      10,
+      114
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "43-F3-Cougars:manual-124-218",
+    "source_needles_1based": [
+      124,
+      218
+    ],
+    "candidate_needles_1based": [
+      114,
+      183
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "43-F3-Cougars:manual-218-335",
+    "source_needles_1based": [
+      218,
+      335
+    ],
+    "candidate_needles_1based": [
+      183,
+      281
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "43-F3-Cougars:manual-335-507",
+    "source_needles_1based": [
+      335,
+      507
+    ],
+    "candidate_needles_1based": [
+      281,
+      428
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "43-F3-Cougars:manual-507-619",
+    "source_needles_1based": [
+      507,
+      619
+    ],
+    "candidate_needles_1based": [
+      428,
+      522
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "43-F3-Cougars:manual-619-640",
+    "source_needles_1based": [
+      619,
+      640
+    ],
+    "candidate_needles_1based": [
+      522,
+      542
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "43-F3-Cougars:manual-640-716",
+    "source_needles_1based": [
+      640,
+      716
+    ],
+    "candidate_needles_1based": [
+      542,
+      605
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "43-F3-Cougars:manual-716-808",
+    "source_needles_1based": [
+      716,
+      808
+    ],
+    "candidate_needles_1based": [
+      605,
+      679
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  }
+]

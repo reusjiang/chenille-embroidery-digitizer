@@ -1,6 +1,16 @@
 # Chenille Embroidery Digitizer
 
-雪尼尔刺绣打带与实机反馈迭代项目。当前提供一个可复现的 **Bulldogs / Font2 / 330 mm** 试生成案例，基于人工同词 DST 的笔顺重建路径。尚未实现任意订单 PDF 自动打带，也尚未完成 Wilcom / 大豪设备试绣验收。
+雪尼尔刺绣打带与实机反馈迭代项目。当前保留 **Bulldogs / Font2 / 330 mm** 基线案例，并提供 **CHENILLE-REF-v002** 三款试绣候选，基于人工同词 DST 的笔顺重建路径。尚未实现任意订单 PDF 自动打带，也尚未完成 Wilcom / 大豪设备试绣验收。
+
+## 最新候选：CHENILLE-REF-v002（2026-10-13）
+
+依据 50 份数字针路对照，新增 **Bulldogs / Font2、Bulldogs / Font3、Cougars / Font3** 三款可试绣候选，包含 DST、逐针回放、三方对照、校验报告和独立反馈表。已通过文件检查，**尚待 Wilcom 检查与实机试绣**；另外 47 款未重新生成。
+
+- [v002 方案说明](releases/reference-guided/v002/README.md) · [候选网页总览](releases/reference-guided/v002/index.html)（本地用浏览器打开）。
+- [生成配置](configs/feedback-v002.json) · [冻结输入与来源](examples/feedback-v002/README.md)。
+- 本地操作方交付包：`dist/CHENILLE-REF-v002-operator-kit.zip`，完整解压后打开 `index.html`；ZIP 默认不纳入 Git。
+
+本版使用同词人工参考重建路径，尚未修复缺失的通用字体中线生成器。原 BULL-F2-330-v001 继续保留为独立基线。
 
 ## 设备操作方从这里开始
 
@@ -67,6 +77,6 @@ python scripts/package_operator.py
 
 ## Git 内容范围
 
-原始订单含客户联系/地址信息；完整样本库、字体和设备照片保留在 `assets/private/`，由 `.gitignore` 排除。仓库中保留了用于复现本案例的单个人工 DST 和生成成果。这里没有为原始字体或样本附加开源许可。详见 [资料与上传说明](docs/data-policy.md)。
+原始订单含客户联系/地址信息；完整样本库、字体和设备照片保留在 `assets/private/`，由 `.gitignore` 排除。仓库中保留用于复现基线及 v002 的最小 DST 样本、对照输入和生成成果。这里没有为原始字体或样本附加开源许可。详见 [资料与上传说明](docs/data-policy.md)。
 
 上传前可执行 `git status --short` 和 `git ls-files --others --exclude-standard` 检查待提交文件。不要使用 `git add -f assets/private` 绕过默认范围。远程仓库地址、访问权限和首次推送由项目所有者配置；本次整理没有推送到任何远程服务。

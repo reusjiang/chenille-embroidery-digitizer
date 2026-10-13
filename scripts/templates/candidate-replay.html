@@ -1,0 +1,44 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>v002 刺绣候选回放</title>
+<style>body{margin:0;background:#f4f6f5;color:#18372e;font:15px system-ui,sans-serif}main{max-width:1250px;margin:auto;padding:24px}h1{font-size:28px}.notice{background:#fff3d8;padding:14px;line-height:1.6}canvas{display:block;width:100%;height:460px;background:white;border:1px solid #d4ded8;margin-top:20px}button,select{font:inherit;padding:8px;margin:6px 8px 6px 0}input[type=range]{width:100%}.row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}a{color:#1e6553}.muted{color:#5a6c65}#stats{font-weight:600;line-height:1.9}label{white-space:nowrap}#pos{font-variant-numeric:tabular-nums}@media(max-width:600px){main{padding:15px}canvas{height:320px}}</style>
+<main><h1 id="title"></h1><p class="notice">待验证候选：文件检查通过，尚未经过 Wilcom 或实机试绣。使用同词人工参考重建；当前对照衡量重建贴合程度。</p>
+<p id="stats"></p><div class="row"><label><input type="checkbox" id="manual" checked>人工参考（蓝）</label><label><input type="checkbox" id="previous">旧候选（红）</label><label><input type="checkbox" id="dots">显示落针点</label></div>
+<canvas id="cv" aria-label="候选与人工参考针路"></canvas><div class="row"><button id="play">播放</button><button id="prev">上一针</button><button id="next">下一针</button><button id="reset">从头</button><select id="view" aria-label="查看部位"><option value="all">整词</option><option value="start">起针放大</option><option value="end">收针放大</option></select><select id="speed" aria-label="回放速度"><option>20</option><option selected>80</option><option>200</option></select><span>针/秒</span><span id="counter"></span></div>
+<input type="range" id="seek" aria-label="针序" min="1"><p id="pos"></p><p class="muted">候选主路为绿色，起针回线为橙色，收针回线为紫色。各路径按包围盒中心平移对齐，不旋转或缩放。回放速度仅用于展示。</p>
+<p><a id="dst" download>下载 DST</a> · <a href="comparison.png">三方对照图</a> · <a href="returns.png">起收放大图</a> · <a href="validation.json">验证数据</a> · <a href="stitches.csv">针序坐标</a> · <a href="trial-record.json">试绣反馈模板</a></p></main>
+<script>
+const DATA=__DATA__;
+const $=id=>document.getElementById(id), r=DATA.report, raw=DATA.points;
+const mid=[0,1].map(k=>(Math.min(...raw.map(p=>p[k]))+Math.max(...raw.map(p=>p[k])))/2);
+const points=raw.map(p=>p.map((v,k)=>v-mid[k]));
+const c=$('cv'),ctx=c.getContext('2d');let n=points.length,playing=false,previousTime=0,carry=0;
+const se=r.return_needle_ranges_1based.start[1],es=r.return_needle_ranges_1based.end[0];
+$('title').textContent=`${r.text} / Font${r.font} / v002`;
+$('stats').textContent=`${r.width_mm.toFixed(1)} × ${r.height_mm.toFixed(1)} mm · ${r.stitch_commands} 针 · 0 跳针 · 起/收回线 ${r.return_lengths_mm.start.toFixed(3)} / ${r.return_lengths_mm.end.toFixed(3)} mm`;
+$('dst').href=r.dst_file;$('seek').max=points.length;$('seek').value=n;
+function paint(){
+ const dpr=window.devicePixelRatio||1,w=c.clientWidth,h=c.clientHeight;c.width=w*dpr;c.height=h*dpr;ctx.scale(dpr,dpr);
+ let chosen=$('view').value==='start'?points.slice(0,se+12):$('view').value==='end'?points.slice(Math.max(0,es-13)):points;
+ if($('view').value==='all'){if($('manual').checked)chosen=chosen.concat(DATA.reference);if($('previous').checked)chosen=chosen.concat(DATA.previous)}
+ const low=[0,1].map(k=>Math.min(...chosen.map(p=>p[k]))),high=[0,1].map(k=>Math.max(...chosen.map(p=>p[k])));
+ const s=Math.min((w-60)/(high[0]-low[0]+1),(h-60)/(high[1]-low[1]+1));
+ const point=p=>[w/2+(p[0]-(low[0]+high[0])/2)*s,h/2+(p[1]-(low[1]+high[1])/2)*s];
+ function line(path,color,width){ctx.strokeStyle=color;ctx.lineWidth=width;ctx.beginPath();path.forEach((p,i)=>{const v=point(p);i?ctx.lineTo(...v):ctx.moveTo(...v)});ctx.stroke()}
+ if($('manual').checked)line(DATA.reference,'#5c92b5',1);
+ if($('previous').checked)line(DATA.previous,'#d76c7c',1);
+ line(points,'#dde5df',1);line(points.slice(0,n),'#17644b',1.7);
+ line(points.slice(0,Math.min(se,n)),'#d3841e',2);line(points.slice(es-1,n),'#9b519e',2);
+ if($('dots').checked){ctx.fillStyle='#17644b';points.slice(0,n).forEach(p=>{ctx.beginPath();ctx.arc(...point(p),2,0,2*Math.PI);ctx.fill()})}
+ ctx.fillStyle='#df4e37';ctx.beginPath();ctx.arc(...point(points[n-1]),4,0,Math.PI*2);ctx.fill();
+ $('counter').textContent=`${n} / ${points.length} 针`;$('seek').value=n;
+ $('pos').textContent=`DST 坐标 X ${raw[n-1][0].toFixed(1)} / Y ${raw[n-1][1].toFixed(1)} mm`;
+}
+function pause(){playing=false;$('play').textContent='播放'}
+$('play').onclick=()=>{playing=!playing;if(playing&&n===points.length)n=1;previousTime=performance.now();carry=0;$('play').textContent=playing?'暂停':'播放';paint()};
+$('prev').onclick=()=>{pause();n=Math.max(1,n-1);paint()};$('next').onclick=()=>{pause();n=Math.min(points.length,n+1);paint()};
+$('reset').onclick=()=>{pause();n=1;paint()};$('seek').oninput=()=>{pause();n=Number($('seek').value);paint()};
+['manual','previous','dots','view'].forEach(id=>$(id).onchange=paint);window.onresize=paint;
+document.onkeydown=e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();$(e.key==='ArrowLeft'?'prev':'next').click()}};
+function tick(t){if(playing){carry+=(t-previousTime)/1000*Number($('speed').value);const k=Math.floor(carry);carry-=k;if(k){n=Math.min(points.length,n+k);paint()}if(n===points.length)pause()}previousTime=t;requestAnimationFrame(tick)}
+paint();requestAnimationFrame(tick);
+</script></html>

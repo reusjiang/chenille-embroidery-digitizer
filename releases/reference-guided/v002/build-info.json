@@ -1,0 +1,17 @@
+{
+  "python": "3.12.3",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "pillow": "12.3.0",
+    "pyembroidery": "1.5.1"
+  },
+  "config_sha256": "474fe9ed3e7430a487d64168a0a7a9861170024d94a65f21d1e38c8cedd49b2f",
+  "source_files_sha256": {
+    "scripts/build_feedback_candidate.py": "fdd31b93c94411f09e5fcf07d6d6b339c695b1f73e471f2c79e616710607ff06",
+    "scripts/generate_dst.py": "0b7439f9ddcf568b66263339d1ef985c4d59efad34ad21ee74d24291568356f3",
+    "scripts/project.py": "c0a95ee399c6787edefbbd560429c8a990560ba940223ced201d0ba27b60a605",
+    "scripts/templates/candidate-replay.html": "91d4275631d190810e3d97de9e4e22ba82dd08b1acbced349786ded5cc55284f"
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "segment_id": "01-F2-Bulldogs:manual-6-34",
+    "source_needles_1based": [
+      6,
+      34
+    ],
+    "candidate_needles_1based": [
+      10,
+      39
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "01-F2-Bulldogs:manual-34-63",
+    "source_needles_1based": [
+      34,
+      63
+    ],
+    "candidate_needles_1based": [
+      39,
+      69
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "01-F2-Bulldogs:manual-63-120",
+    "source_needles_1based": [
+      63,
+      120
+    ],
+    "candidate_needles_1based": [
+      69,
+      127
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "01-F2-Bulldogs:manual-120-186",
+    "source_needles_1based": [
+      120,
+      186
+    ],
+    "candidate_needles_1based": [
+      127,
+      196
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "01-F2-Bulldogs:manual-186-225",
+    "source_needles_1based": [
+      186,
+      225
+    ],
+    "candidate_needles_1based": [
+      196,
+      237
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "01-F2-Bulldogs:manual-225-414",
+    "source_needles_1based": [
+      225,
+      414
+    ],
+    "candidate_needles_1based": [
+      237,
+      430
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "01-F2-Bulldogs:manual-414-581",
+    "source_needles_1based": [
+      414,
+      581
+    ],
+    "candidate_needles_1based": [
+      430,
+      599
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "01-F2-Bulldogs:manual-581-613",
+    "source_needles_1based": [
+      581,
+      613
+    ],
+    "candidate_needles_1based": [
+      599,
+      631
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "01-F2-Bulldogs:manual-613-656",
+    "source_needles_1based": [
+      613,
+      656
+    ],
+    "candidate_needles_1based": [
+      631,
+      675
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  },
+  {
+    "segment_id": "01-F2-Bulldogs:manual-656-802",
+    "source_needles_1based": [
+      656,
+      802
+    ],
+    "candidate_needles_1based": [
+      675,
+      821
+    ],
+    "boundary_note": "First/last segment starts/ends at the return attachment, slightly inside source core."
+  }
+]

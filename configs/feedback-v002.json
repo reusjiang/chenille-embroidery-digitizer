@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "scheme_id": "CHENILLE-REF-v002",
+  "status": "candidate_pending_wilcom_and_sewout",
+  "date": "2026-10-13",
+  "method": "reviewed_same_word_manual_reference_reconstruction",
+  "feedback_batch": "path-comparison-50-20260930",
+  "parameters": {
+    "max_step_mm": 2.3,
+    "chord_error_mm": 0.04,
+    "min_sampling_step_mm": 0.35,
+    "start_radius_mm": 0.35,
+    "end_radius_mm": 0.25,
+    "return_length_mm": 10.0,
+    "return_tolerance_mm": 0.05,
+    "max_final_stitch_mm": 2.5,
+    "main_reconstruction_max_deviation_mm": 0.35,
+    "comparison_sampling_step_mm": 0.25
+  },
+  "cases": [
+    {
+      "id": "01-F2-Bulldogs",
+      "text": "Bulldogs",
+      "font": 2,
+      "width_mm": 328.9,
+      "manual": "examples/feedback-v002/01-F2-Bulldogs/manual.DST",
+      "manual_sha256": "216b5a9f6bbce5a6285f38649230199f6bdbd7300425ba11e27e785a132bb4e7",
+      "previous_draft": "examples/feedback-v002/01-F2-Bulldogs/previous-draft.DST",
+      "previous_draft_sha256": "2e4d1b11586690dd455b662e52a38a9e02d290b313a1c6cb8e793954348634d7",
+      "source_core_needles_1based": [
+        6,
+        802
+      ],
+      "source_feedback": "feedback/inbox/人工对照反馈50份-僵硬专项/01-F2-Bulldogs/feedback.json",
+      "source_feedback_sha256": "c3789ae8a6a21cd69a553108879d4eb17d5a27362cdb9ed42e09d5e72579054f",
+      "reported_problem": "B 中腰由弯曲过渡变成较平直的接线；双 l 落底处连续出现短折接，削弱人工稿流畅的连笔。"
+    },
+    {
+      "id": "36-F3-Bulldogs",
+      "text": "Bulldogs",
+      "font": 3,
+      "width_mm": 329.7,
+      "manual": "examples/feedback-v002/36-F3-Bulldogs/manual.DST",
+      "manual_sha256": "fda42269f2ccf3b3b2d518c431dd936536c0e5857e87e65d12ad58a841423a21",
+      "previous_draft": "examples/feedback-v002/36-F3-Bulldogs/previous-draft.DST",
+      "previous_draft_sha256": "dadec5c82380b6bf0e6f6540c1a486af762f85076cdda91acdf6a17a9ee8e6bc",
+      "source_core_needles_1based": [
+        7,
+        903
+      ],
+      "source_feedback": "feedback/inbox/人工对照反馈50份-僵硬专项/36-F3-Bulldogs/feedback.json",
+      "source_feedback_sha256": "6cb093da9f384c4939284c2239d92d00173971687d52d51c2210bdc8520c308c",
+      "reported_problem": "B 主竖、中腰和上环趋于方直，双 l/d 谷底呈连续折接；这是字形僵硬的重点样本。"
+    },
+    {
+      "id": "43-F3-Cougars",
+      "text": "Cougars",
+      "font": 3,
+      "width_mm": 319.9,
+      "manual": "examples/feedback-v002/43-F3-Cougars/manual.DST",
+      "manual_sha256": "c3a06b5351f311602c81804547c057e971c7cb90a9a0a0b4a4da3a5a803cc4af",
+      "previous_draft": "examples/feedback-v002/43-F3-Cougars/previous-draft.DST",
+      "previous_draft_sha256": "9d7756e3733d0c63d8799f90b190cc30d5675d1142020ec0f42ebf8916acd3b1",
+      "source_core_needles_1based": [
+        7,
+        808
+      ],
+      "source_feedback": "feedback/inbox/人工对照反馈50份-僵硬专项/43-F3-Cougars/feedback.json",
+      "source_feedback_sha256": "e7cc5a76e8ef46afb5f7d4cc65df1b0b4daae1d9356a17e234769e7b601296a4",
+      "reported_problem": "o/u 接口被拉成直短段，g 下环变浅，r/s 接合处折转更集中。"
+    }
+  ]
+}

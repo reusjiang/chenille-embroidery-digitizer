@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "trial_id": null,
+  "design_version": "CHENILLE-REF-v002/43-F3-Cougars",
+  "generated_dst": "Cougars_F3_319.9mm_v002.DST",
+  "generated_dst_sha256": "96376889f67a9dadecb4fe8c4e6f40212f48f47f0b1aa32b001acc40c3ff102d",
+  "actual_sewn_dst_sha256": null,
+  "status": "not_run",
+  "date": null,
+  "operator": null,
+  "machine": {
+    "id": null,
+    "attachment_or_mode": null,
+    "speed": null,
+    "tension": null
+  },
+  "materials": {
+    "fabric": null,
+    "stabilizer": null,
+    "yarn": null,
+    "needle": null,
+    "hooping": null
+  },
+  "wilcom_check": {
+    "completed": null,
+    "saved_after_import": null
+  },
+  "machine_transform": {
+    "scale": null,
+    "rotation_deg": null,
+    "mirror": null
+  },
+  "result": {
+    "completed": null,
+    "thread_break_count": null,
+    "unplanned_stop_count": null,
+    "accepted_by_operator": null
+  },
+  "defects": [],
+  "photos": [],
+  "repeat_index": null,
+  "notes": "复制后填写。未知保持 null。新回线与短针需重点观察。"
+}
