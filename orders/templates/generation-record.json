@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "order_id": null,
+  "run_id": null,
+  "route": null,
+  "status": "not_run",
+  "order_sha256": null,
+  "engine": {
+    "git_commit": null,
+    "dirty": null,
+    "source_hashes": {}
+  },
+  "catalog": {
+    "version": null,
+    "manifest_sha256": null
+  },
+  "selected_samples": [],
+  "annotation_versions": [],
+  "rule_versions": [],
+  "process_profile": null,
+  "config_sha256": null,
+  "output": {
+    "path": null,
+    "sha256": null,
+    "validation_path": null
+  },
+  "experiment_ids": [],
+  "trial_ids": []
+}

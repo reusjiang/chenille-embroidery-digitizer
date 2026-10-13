@@ -14,44 +14,49 @@
 
 ## 设备操作方从这里开始
 
-1. 阅读 [设备操作指南](docs/operator-guide.md)。
-2. 进入 [BULL-F2-330-v001 交付目录](releases/bulldogs-font2-330/v001/README.md)。
-3. 下载或完整解压目录，双击 `replay.html` 看逐针回放；Git 网页通常只显示 HTML 源码，需要本地浏览器打开。
-4. 在 Wilcom 检查后，用目录内的 `Bulldogs_F2_330mm.DST` 试绣，并填写 [试绣反馈表](feedback/templates/trial-report.md)。操作方不需要安装 Python。
+1. 阅读 [设备操作指南](docs/operator-guide.md)，本轮使用 **CHENILLE-REF-v002**。
+2. 进入 [v002 方案与交付目录](releases/reference-guided/v002/README.md)，完整下载目录或解压 `CHENILLE-REF-v002-operator-kit.zip`。
+3. 用本地浏览器打开目录根部的 [index.html](releases/reference-guided/v002/index.html)，选择款式查看逐针回放、对照图和对应候选 DST。
+4. 在 Wilcom 检查后安排试绣，复制对应款目录内的 `trial-record.json` 填写；每款、每次重复单独记录。操作方不需要安装 Python。
 
-| 基线指标 | v001 |
-|---|---|
-| 状态 | 文件验证通过，等待实机试绣 |
-| 落针路径实际尺寸 | 330.0 × 99.0 mm |
-| 普通落针 / 跳针命令 | 786 / 0 |
-| 起 / 收回线实测弧长 | 9.998 / 9.981 mm，包含圆弧 |
-| 待重点观察 | 两端短针、内部尖转、回走重叠效果 |
+首批包含 Bulldogs / Font2（328.9 × 98.7 mm）、Bulldogs / Font3（329.7 × 97.6 mm）、Cougars / Font3（319.9 × 108.3 mm）。状态均为文件验证通过，待 Wilcom 检查与实机试绣。
 
-完整试绣包由开发方运行 `python scripts/package_operator.py` 生成于 `dist/`。该 ZIP 不纳入 Git，可作为 Git 平台的 Release 附件或直接交给操作方。
+[v001 历史基线](releases/bulldogs-font2-330/v001/README.md) 保留作对照，另见 [v001 操作指南](docs/operator-guide-v001.md)。`scripts/package_operator.py` 仅打包 v001；本轮请领取文件名明确含 `CHENILLE-REF-v002` 的交付包。ZIP 存于本地 `dist/`，默认不纳入 Git。
 
 ## 目录
 
 ```text
 chenille-embroidery-digitizer/
-├── README.md
-├── docs/                         # 操作指南、开发说明、打带要求、迭代方案
-├── examples/bulldogs-font2/       # 最小可复现人工 DST 样本及来源校验
-├── releases/bulldogs-font2-330/
-│   └── v001/                     # 冻结 DST、回放、预览、报告、校验清单
-├── feedback/
-│   ├── templates/                # 操作方反馈表和结构化记录
-│   ├── reviewed/                 # 已整理反馈与分析，注明是否经过实机试绣
-│   └── inbox/                    # 本地待整理反馈，不进入 Git
-├── scripts/                      # 生成、回放、报告、校验、交付包工具
-├── tests/                        # DST 编码/回读及交付完整性测试
-├── requirements.txt              # 直接依赖
-├── requirements.lock.txt         # 已验证的依赖版本集合
-├── assets/private/               # 本地订单、完整样本库、字体、设备照片，不进入 Git
-├── build/                        # 自动生成候选，不进入 Git
-└── dist/                         # 操作方交付 ZIP，不进入 Git
+├── assets/private/          # 原始 DST、字体、订单 PDF，保留原路径
+├── library/                 # 版本索引、人工标注、覆盖报告
+│   ├── catalog/v001/
+│   ├── annotations/
+│   └── coverage/v001/
+├── rules/                   # 字体连接规则、软件策略与工艺配置
+│   ├── fonts/
+│   └── processes/
+├── orders/                  # 订单/生成记录模板及本地工作区
+├── experiments/             # 逐轮假设、变更、证据与决策
+├── src/chenille/             # 统一引擎；已实现样本索引
+├── scripts/                 # 命令入口及历史生成脚本
+├── configs/                 # 样本库及候选运行配置
+├── examples/                # 最小可复现案例
+├── tests/                   # 编码、交付及索引回归检查
+├── feedback/                # inbox、reviewed、templates
+├── releases/                # 冻结交付；原 v001/v002 路径保持不变
+├── build/                   # 临时候选，不进入 Git
+├── dist/                    # 操作方交付包，不进入 Git
+└── docs/                    # 目标、操作说明、结构与迭代方案
 ```
 
+见 [目录职责与每轮工作流](docs/repository-layout.md)。开发方从 [样本索引](library/README.md) 开始；订单和新词组合引擎尚待实现。
+
+
 ## 开发方快速开始
+
+先核对样本索引：`python scripts/index_library.py --version v001 --verify`。原库变化后以新的版本号构建索引，详见 [索引说明](library/README.md)。
+
+v002 生成步骤和环境见 [v002 复现说明](releases/reference-guided/v002/README.md#文件与复现)。以下命令针对 v001 历史基线；其中打包命令不会生成 v002 交付包。
 
 基线环境：Python 3.13（本次验证为 3.13.13）。激活虚拟环境后执行下列跨平台命令，详细 Windows / macOS 步骤见 [开发说明](docs/developer-guide.md)。
 
@@ -67,6 +72,8 @@ python scripts/package_operator.py
 
 ## 持续迭代约定
 
+通用版本采用 [样本库驱动路线](docs/library-driven-roadmap.md)：优先匹配并复用已有完整 DST，再扩展字母、数字及连接组合。已有输出范例与新词生成分别验证；检索和组合引擎仍待实现。
+
 最新整理：[50 份人工针路对照分析](feedback/reviewed/path-comparison-50-20260930/README.md)（2026-10-13）。这批为字体中线生成候选的数字对照，尚无实机结果，且与已发布 Bulldogs v001 为不同生成版本。
 
 - 用版本 ID + DST SHA256 绑定每次试绣，记录软件/机器端缩放、旋转及另存操作。
@@ -77,6 +84,6 @@ python scripts/package_operator.py
 
 ## Git 内容范围
 
-原始订单含客户联系/地址信息；完整样本库、字体和设备照片保留在 `assets/private/`，由 `.gitignore` 排除。仓库中保留用于复现基线及 v002 的最小 DST 样本、对照输入和生成成果。这里没有为原始字体或样本附加开源许可。详见 [资料与上传说明](docs/data-policy.md)。
+原始资料保留在 `assets/private/`。当前其中已有文件被 Git 跟踪，不能因目录名含 private 就认为已排除；本次结构调整保留现有跟踪状态。新增实际订单放 `orders/local/`，待整理反馈放 `feedback/inbox/`，两者按 `.gitignore` 管理。仓库中保留用于复现基线及 v002 的最小 DST 样本、对照输入和生成成果。这里没有为原始字体或样本附加开源许可。详见 [资料与上传说明](docs/data-policy.md)。
 
 上传前可执行 `git status --short` 和 `git ls-files --others --exclude-standard` 检查待提交文件。不要使用 `git add -f assets/private` 绕过默认范围。远程仓库地址、访问权限和首次推送由项目所有者配置；本次整理没有推送到任何远程服务。

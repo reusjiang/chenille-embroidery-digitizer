@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "experiment_id": null,
+  "date": null,
+  "status": "planned",
+  "problem": null,
+  "hypothesis": null,
+  "engine": {
+    "git_commit": null,
+    "dirty": null,
+    "source_hashes": {}
+  },
+  "catalog_version": null,
+  "order_ids": [],
+  "case_ids": [],
+  "baseline": null,
+  "candidate": null,
+  "changed_rules": [],
+  "fixed_conditions": [],
+  "coupled_changes": [],
+  "evidence": [],
+  "results": null,
+  "machine_trial_ids": [],
+  "decision": {
+    "outcome": "pending",
+    "reason": null
+  },
+  "next_hypothesis": null
+}

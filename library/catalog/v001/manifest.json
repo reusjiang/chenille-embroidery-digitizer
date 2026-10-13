@@ -1,0 +1,20 @@
+{
+  "code_sha256": {
+    "scripts/index_library.py": "d8e44f3a9c2c8e3300639985237056ac3e7d8f628bdffa91fcfbeda63d827cce",
+    "src/chenille/__init__.py": "84509e6b3ec901919c9340fee01b0e4cbfa9bf993637f48df6f78c1e0ce51806",
+    "src/chenille/catalog.py": "1031d804363989501cebbb2769ff87bb054f8f59378899cc98c2724115806e4f"
+  },
+  "config": {
+    "path": "configs/library-index.json",
+    "sha256": "df8ba83c45814c8fb5d55ee8430d8d3356d40c8ba056e668c21c57969aab472c"
+  },
+  "files": {
+    "library/catalog/v001/catalog.json": "ecf933294b169ab1bbba3d8a6fbca0964a29d103e10b671f8b1525e77cd4fe86",
+    "library/coverage/v001/summary.json": "a7efba5d813aa10bfedc6170062ea368becd6e6a220e03bd31e8974b6406473e"
+  },
+  "pyembroidery": "1.5.1",
+  "python": "3.12.3",
+  "schema_version": 1,
+  "snapshot_id": "v001",
+  "status": "metadata_indexed_not_design_verified"
+}

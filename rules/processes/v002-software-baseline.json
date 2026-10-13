@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "profile_id": "v002-software-baseline",
+  "status": "file_verified_pending_wilcom_and_sewout",
+  "parameter_source": "configs/feedback-v002.json",
+  "parameter_source_sha256": "474fe9ed3e7430a487d64168a0a7a9861170024d94a65f21d1e38c8cedd49b2f",
+  "parameter_pointer": "/parameters",
+  "scope_case_ids": [
+    "01-F2-Bulldogs",
+    "36-F3-Bulldogs",
+    "43-F3-Cougars"
+  ],
+  "experiment_id": "2026-10-13-reference-guided-v002",
+  "machine_profile": null,
+  "material_profile": null,
+  "production_accepted": false
+}

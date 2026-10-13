@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "rule_id": null,
+  "version": null,
+  "status": "proposed",
+  "font_id": null,
+  "context": {
+    "characters": null,
+    "position": null,
+    "previous_character": null,
+    "next_character": null
+  },
+  "source_annotations": [],
+  "behavior": null,
+  "applicable_range": null,
+  "experiments": [],
+  "acceptance_evidence": [],
+  "supersedes": null
+}

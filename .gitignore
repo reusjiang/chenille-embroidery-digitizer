@@ -25,3 +25,7 @@ Thumbs.db
 /tmp/
 /output/
 *.zip
+
+# New order workspaces; tracked historical assets are unchanged
+/orders/local/*
+!/orders/local/README.md

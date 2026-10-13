@@ -1,8 +1,16 @@
 # 开发与发布说明
 
-当前代码是 Bulldogs 单案例原型。路径边界、局部规则仍有案例专用逻辑；整理目录不代表已经实现通用学习或订单 OCR。
+当前包含 v001 Bulldogs 单案例基线及 v002 三款同词人工参考候选。路径边界、局部规则仍有案例专用逻辑；整理目录不代表已经实现通用学习或订单 OCR。
+
+## 新目录开发入口
+
+样本索引逻辑位于 `src/chenille/catalog.py`，入口为 `scripts/index_library.py`。先运行 `python scripts/index_library.py --version v001 --verify` 核对当前库；更新库后选择新版本号构建，不覆盖旧快照。详见 [目录与工作流](repository-layout.md)。
+
+订单、字体规则和工艺配置已有模板约定，尚未接入自动匹配或组合。旧生成脚本保持原路径，避免改变已有发布的源码依据。
 
 ## 环境
+
+本页以下环境、构建、检查和打包命令针对 v001 历史基线。v002 请使用 [版本内复现说明](../releases/reference-guided/v002/README.md#文件与复现)；`package_operator.py` 仅生成 v001 包。
 
 已验证 Python 3.13.13。锁定文件列出当前运行所需版本；属于版本锁，不是跨平台 wheel 哈希锁。本地环境不提交 Git。
 

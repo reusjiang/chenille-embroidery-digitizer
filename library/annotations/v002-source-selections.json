@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "annotation_id": "v002-source-selections",
+  "status": "existing_digital_config_migrated",
+  "needle_numbering": "1-based STITCH commands; these sources are continuous single-color references",
+  "selections": [
+    {
+      "case_id": "01-F2-Bulldogs",
+      "sample_id": "dst-sha256-216b5a9f6bbce5a6285f38649230199f6bdbd7300425ba11e27e785a132bb4e7",
+      "source_sha256": "216b5a9f6bbce5a6285f38649230199f6bdbd7300425ba11e27e785a132bb4e7",
+      "source_example": "examples/feedback-v002/01-F2-Bulldogs/manual.DST",
+      "source_core_needles_1based": [
+        6,
+        802
+      ],
+      "text_from_v002_config": "Bulldogs",
+      "font_from_v002_config": 2,
+      "evidence": "configs/feedback-v002.json",
+      "scope": "same_word_main_path_selection_not_character_segmentation"
+    },
+    {
+      "case_id": "36-F3-Bulldogs",
+      "sample_id": "dst-sha256-fda42269f2ccf3b3b2d518c431dd936536c0e5857e87e65d12ad58a841423a21",
+      "source_sha256": "fda42269f2ccf3b3b2d518c431dd936536c0e5857e87e65d12ad58a841423a21",
+      "source_example": "examples/feedback-v002/36-F3-Bulldogs/manual.DST",
+      "source_core_needles_1based": [
+        7,
+        903
+      ],
+      "text_from_v002_config": "Bulldogs",
+      "font_from_v002_config": 3,
+      "evidence": "configs/feedback-v002.json",
+      "scope": "same_word_main_path_selection_not_character_segmentation"
+    },
+    {
+      "case_id": "43-F3-Cougars",
+      "sample_id": "dst-sha256-c3a06b5351f311602c81804547c057e971c7cb90a9a0a0b4a4da3a5a803cc4af",
+      "source_sha256": "c3a06b5351f311602c81804547c057e971c7cb90a9a0a0b4a4da3a5a803cc4af",
+      "source_example": "examples/feedback-v002/43-F3-Cougars/manual.DST",
+      "source_core_needles_1based": [
+        7,
+        808
+      ],
+      "text_from_v002_config": "Cougars",
+      "font_from_v002_config": 3,
+      "evidence": "configs/feedback-v002.json",
+      "scope": "same_word_main_path_selection_not_character_segmentation"
+    }
+  ],
+  "machine_tested": false
+}

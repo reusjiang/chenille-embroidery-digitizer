@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "annotation_id": null,
+  "status": "draft",
+  "sample_id": null,
+  "source_sha256": null,
+  "verified_design": {
+    "text": null,
+    "font_id": null,
+    "lines": null,
+    "layout": null
+  },
+  "needle_numbering": "1-based STITCH commands, excluding jumps and END",
+  "segments": [],
+  "connections": [],
+  "review": {
+    "reviewer": null,
+    "date": null,
+    "evidence": []
+  }
+}

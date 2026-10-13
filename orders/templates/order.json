@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "order_id": null,
+  "status": "draft",
+  "source": {
+    "path": null,
+    "sha256": null,
+    "pages": []
+  },
+  "design": {
+    "text": null,
+    "font_id": null,
+    "width_mm": null,
+    "lines": null,
+    "alignment": null
+  },
+  "requirements": {
+    "process_profile_id": null,
+    "return_length_mm": null
+  },
+  "field_review": {
+    "text": false,
+    "font": false,
+    "dimensions": false,
+    "layout": false
+  },
+  "notes": null
+}

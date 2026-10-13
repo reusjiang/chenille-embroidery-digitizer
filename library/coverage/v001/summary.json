@@ -1,0 +1,54 @@
+{
+  "duplicate_content_groups": [
+    {
+      "paths": [
+        "assets/private/dst-library/fon2/Aubrey.DST",
+        "assets/private/dst-library/font3/Aubrey.DST"
+      ],
+      "sample_id": "dst-sha256-054680f0b80230d1f6540c537897670f568fcc27297254a2f8e7ed4460d6496b"
+    }
+  ],
+  "flagged_samples": [
+    {
+      "flags": [
+        "zero_extent_requires_classification"
+      ],
+      "sample_id": "dst-sha256-d32d5dfe541029ecbdc8b69c8fae8993a3a206e56d0161635e4b46c4423328b2"
+    }
+  ],
+  "folder_counts": {
+    "fon2": 234,
+    "font1": 1210,
+    "font3": 1153
+  },
+  "fonts": {
+    "Font1": {
+      "filename_character_hints": "012346789ABCDEFGHIJKLMNOPQRSTUVWYabcdefghijklmnopqrstuvwxyz",
+      "source_file_count": 1210,
+      "verification_status": "not_annotated",
+      "verified_characters": [],
+      "verified_connections": []
+    },
+    "Font2": {
+      "filename_character_hints": "1237ABCDEFGHIJKLMNOPRSTUVWabcdefghijklmnopqrstuvwyz",
+      "source_file_count": 234,
+      "verification_status": "not_annotated",
+      "verified_characters": [],
+      "verified_connections": []
+    },
+    "Font3": {
+      "filename_character_hints": "012356789ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwxyz",
+      "source_file_count": 1153,
+      "verification_status": "not_annotated",
+      "verified_characters": [],
+      "verified_connections": []
+    }
+  },
+  "schema_version": 1,
+  "scope": "Inventory only. Filename characters do not prove glyph or connection coverage.",
+  "snapshot_id": "v001",
+  "source_file_count": 2597,
+  "unique_content_count": 2596,
+  "unmapped_font_paths": [],
+  "unreadable_samples": []
+}

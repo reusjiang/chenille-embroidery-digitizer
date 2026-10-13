@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "experiment_id": "2026-10-13-reference-guided-v002",
+  "date": "2026-10-13",
+  "record_type": "retrospective_from_existing_files",
+  "status": "file_verified_pending_wilcom_and_sewout",
+  "problem": "50 份数字对照提示旧候选在回环和连接处存在僵硬、比例和起收问题。",
+  "hypothesis": "采用同词人工笔顺重建并补齐回线，可提高这三款的数字路径贴合程度；实机效果待验证。",
+  "engine": {
+    "containing_git_commit": "5c6b3a6",
+    "build_git_commit": null,
+    "source_hashes": {
+      "scripts/build_feedback_candidate.py": "fdd31b93c94411f09e5fcf07d6d6b339c695b1f73e471f2c79e616710607ff06",
+      "scripts/generate_dst.py": "0b7439f9ddcf568b66263339d1ef985c4d59efad34ad21ee74d24291568356f3",
+      "scripts/project.py": "c0a95ee399c6787edefbbd560429c8a990560ba940223ced201d0ba27b60a605",
+      "scripts/templates/candidate-replay.html": "91d4275631d190810e3d97de9e4e22ba82dd08b1acbced349786ded5cc55284f"
+    }
+  },
+  "catalog_version": null,
+  "case_ids": [
+    "01-F2-Bulldogs",
+    "36-F3-Bulldogs",
+    "43-F3-Cougars"
+  ],
+  "baseline": "各款 examples/feedback-v002/<case-id>/previous-draft.DST；不是 BULL-F2-330-v001",
+  "candidate": "releases/reference-guided/v002",
+  "config": "configs/feedback-v002.json",
+  "changed_rules": [
+    "主路径改用同词人工参考",
+    "曲线拟合和重采样",
+    "增加 10 mm 起收回线"
+  ],
+  "fixed_conditions": [
+    "保持各款人工稿宽度",
+    "保留内部有意尖转锚点"
+  ],
+  "coupled_changes": [
+    "路径来源、拟合、采样和起收同时变化，不作单因素因果归因"
+  ],
+  "evidence": [
+    "feedback/reviewed/path-comparison-50-20260930/README.md",
+    "releases/reference-guided/v002/summary.json",
+    "releases/reference-guided/v002/build-info.json"
+  ],
+  "results": [
+    {
+      "case_id": "01-F2-Bulldogs",
+      "dst_sha256": "743229434795721c452ff21bfa6d83f137fc2abdc649c804c93752f6822e4f0a",
+      "old_path_p95_mm": 4.91884994274835,
+      "new_path_p95_mm": 0.17259960003648542
+    },
+    {
+      "case_id": "36-F3-Bulldogs",
+      "dst_sha256": "a34a44bbddd09fe33e6d9d67dc98f588fd59153cf2b66d0b2ba57996ef7a0211",
+      "old_path_p95_mm": 5.571838085080108,
+      "new_path_p95_mm": 0.16278820596103233
+    },
+    {
+      "case_id": "43-F3-Cougars",
+      "dst_sha256": "96376889f67a9dadecb4fe8c4e6f40212f48f47f0b1aa32b001acc40c3ff102d",
+      "old_path_p95_mm": 9.120282540488375,
+      "new_path_p95_mm": 0.12165525060596426
+    }
+  ],
+  "machine_trial_ids": [],
+  "decision": {
+    "outcome": "retain_as_trial_candidate",
+    "reason": "文件检查通过；人工参考也是生成输入，因此数值仅表示重建贴合。尚无 Wilcom 或实机结论。"
+  },
+  "next_hypothesis": "通过同条件重复试绣定位起收、短针和连接效果，再选择单项策略实验。"
+}
