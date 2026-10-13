@@ -30,7 +30,7 @@ chenille-embroidery-digitizer/
 │   └── v001/                     # 冻结 DST、回放、预览、报告、校验清单
 ├── feedback/
 │   ├── templates/                # 操作方反馈表和结构化记录
-│   ├── reviewed/                 # 经整理、可共享的实际试绣记录（目前没有）
+│   ├── reviewed/                 # 已整理反馈与分析，注明是否经过实机试绣
 │   └── inbox/                    # 本地待整理反馈，不进入 Git
 ├── scripts/                      # 生成、回放、报告、校验、交付包工具
 ├── tests/                        # DST 编码/回读及交付完整性测试
@@ -56,6 +56,8 @@ python scripts/package_operator.py
 `build_pilot.py` 只写入 `build/bulldogs-font2-330/`。生成器会拒绝覆盖 `releases/`；发布新版本需要审查新输出并建立新的版本目录。当前案例无需私有 PDF、完整字体或样本库即可复现 DST；私有 Font2 存在时才额外渲染字体参考图。
 
 ## 持续迭代约定
+
+最新整理：[50 份人工针路对照分析](feedback/reviewed/path-comparison-50-20260930/README.md)（2026-10-13）。这批为字体中线生成候选的数字对照，尚无实机结果，且与已发布 Bulldogs v001 为不同生成版本。
 
 - 用版本 ID + DST SHA256 绑定每次试绣，记录软件/机器端缩放、旋转及另存操作。
 - 每轮只验证一个主要假设，保留失败记录和旧版本。
