@@ -1,0 +1,8 @@
+{
+  "ruleset_id": "codex-trial-v001",
+  "width_tolerance_mm": 0.1,
+  "return_length_mm": 10.0,
+  "return_tolerance_mm": 0.05,
+  "max_stitch_mm": 2.5,
+  "status": "trial_constraints_not_machine_specification"
+}

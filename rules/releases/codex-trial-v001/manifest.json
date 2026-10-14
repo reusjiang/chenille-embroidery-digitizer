@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "ruleset_id": "codex-trial-v001",
+  "date": "2026-10-14",
+  "status": "operator_trial_not_machine_accepted",
+  "files": {
+    "AGENTS.md": "2e3dff57ebb614d306451b6a7d76bb3d98e5cdf0ae5b5b4ec9a90650d97550cf",
+    "START_HERE.md": "9b023c3b69ba7b6c6849a8b7a6992e08672c6e7dfcbcee87ceaad17e426be327",
+    "docs/codex-operator-guide.md": "bd9b0c3ac21b477f45a1fbe12d7f05d34b3d5d5ed832d3108193a612a8c87e68",
+    "scripts/operator_trial.py": "8daea6dd724ee634267981faea8d1872dc85e10859fbd652e74fa71b0441f151",
+    "src/chenille/__init__.py": "84509e6b3ec901919c9340fee01b0e4cbfa9bf993637f48df6f78c1e0ce51806",
+    "src/chenille/operator_workflow.py": "e1b8c084e4d6647afe8a607b7fd928115175c80f877f63b1d59e320c6efd011e",
+    "src/chenille/trial_validation.py": "d252133594065d49cf5cf8980349c542b96fd6d222dfe338002e1c83a5e7c76d",
+    "rules/releases/codex-trial-v001/README.md": "2121bf7c42da083f510663caf94789496681f6577d4c0b32225c9fdb67883d3f",
+    "rules/releases/codex-trial-v001/RULES.md": "d59aaefea592f4950a20c9ca90fa45fa80527d562d7031261c04f895a9e61373",
+    "rules/releases/codex-trial-v001/limits.json": "5289ca5d636cec433b9433c44570c1602e7fd732a6f8a93b4050d37dc8883378",
+    "rules/releases/codex-trial-v001/order.template.json": "37c153d82fdebfd59fa8d70b01d8e9dbf6bc7cda18ddbd50d6946d40309748bc",
+    "rules/releases/codex-trial-v001/plan.template.json": "3a40ed63bfd698ae9d68022d9f8119e73f7457f4c55168c859cec736db2fc899",
+    "rules/releases/codex-trial-v001/requirements.txt": "5ca015a0e2020cba5412eb0a2025ad8edced56e4d9318e3607fd2b04d635fac2",
+    "rules/releases/codex-trial-v001/VALIDATION.md": "518f29b93ad59dfe5ec2e781449e2737dc77c4d5bf071b4d7c456fdb35e0b5d6"
+  }
+}

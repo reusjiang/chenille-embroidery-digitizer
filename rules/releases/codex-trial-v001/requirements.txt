@@ -1,0 +1,2 @@
+# Common operator checks/search/package; existing generators have their own locks.
+pyembroidery==1.5.1
