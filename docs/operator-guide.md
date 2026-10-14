@@ -1,5 +1,7 @@
 # 设备操作指南
 
+如果要用自己的 Codex 处理本地 PDF 新订单，请先读 [START_HERE.md](../START_HERE.md) 和 [Codex 操作指南](codex-operator-guide.md)。以下步骤只适用于直接试绣既有 v002 三款。
+
 **本轮请进入 [CHENILLE-REF-v002 版本目录](../releases/reference-guided/v002/README.md)**，试绣 Bulldogs / Font2、Bulldogs / Font3、Cougars / Font3 三款候选。文件检查已通过，尚待 Wilcom 检查和实机试绣。
 
 v001 保留为历史基线；只有明确安排 v001 对照试绣时，才使用 [v001 操作指南](operator-guide-v001.md)。

@@ -2,6 +2,7 @@
 
 | 入口 | 用途 |
 |---|---|
+| `operator_trial.py` | Codex 规则包入口：verify-rules / init / search / check / package / demo |
 | `index_library.py --version v001 --verify` | 核对样本索引快照及所有原始 DST 哈希 |
 | `index_library.py --version v002` | 在原库更新后生成新的索引快照，拒绝覆盖已有版本 |
 | `build_feedback_candidate.py --output build/<new-name>` | 生成既有 v002 三款同词参考候选 |

@@ -1,5 +1,7 @@
 # 可复用规则
 
+已交付试用规则：[codex-trial-v001](releases/codex-trial-v001/README.md)，含确定的执行约束、固定校验和记录模板。下列字体/工艺目录仍为研究和规则积累区域，不自动成为已接受生产规则。
+
 - [fonts/](fonts/README.md)：字母笔段、进出位置、回走、交叉和连接规则。
 - [processes/](processes/README.md)：起收、采样及设备/材料适用配置。
 

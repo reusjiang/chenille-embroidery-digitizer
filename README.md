@@ -2,6 +2,12 @@
 
 雪尼尔刺绣打带与实机反馈迭代项目。当前保留 **Bulldogs / Font2 / 330 mm** 基线案例，并提供 **CHENILLE-REF-v002** 三款试绣候选，基于人工同词 DST 的笔顺重建路径。尚未实现任意订单 PDF 自动打带，也尚未完成 Wilcom / 大豪设备试绣验收。
 
+## 设备方 Codex 规则试用包
+
+**下载 main.zip 后，用自己的 Codex 打开解压根目录，从 [START_HERE.md](START_HERE.md) 开始。** 本版为 `codex-trial-v001`：提供规则、样本检索、任务建立、统一校验、离线回放和反馈打包。PDF 阅读和本单生成逻辑由设备方 Codex 执行或实现，尚无固定通用自动生成引擎。
+
+[操作指南](docs/codex-operator-guide.md) · [确定规则](rules/releases/codex-trial-v001/RULES.md)。使用新订单时走这条入口；仅试绣现有三款时使用下面的 v002。
+
 ## 最新候选：CHENILLE-REF-v002（2026-10-13）
 
 依据 50 份数字针路对照，新增 **Bulldogs / Font2、Bulldogs / Font3、Cougars / Font3** 三款可试绣候选，包含 DST、逐针回放、三方对照、校验报告和独立反馈表。已通过文件检查，**尚待 Wilcom 检查与实机试绣**；另外 47 款未重新生成。
@@ -12,7 +18,7 @@
 
 本版使用同词人工参考重建路径，尚未修复缺失的通用字体中线生成器。原 BULL-F2-330-v001 继续保留为独立基线。
 
-## 设备操作方从这里开始
+## 仅试绣现有 v002 三款
 
 1. 阅读 [设备操作指南](docs/operator-guide.md)，本轮使用 **CHENILLE-REF-v002**。
 2. 进入 [v002 方案与交付目录](releases/reference-guided/v002/README.md)，完整下载目录或解压 `CHENILLE-REF-v002-operator-kit.zip`。
